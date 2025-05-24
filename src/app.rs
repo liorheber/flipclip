@@ -20,9 +20,9 @@ impl Default for PromptsConfig {
         let mut modes = HashMap::new();
         modes.insert("tldr".to_string(), "Return a 2‑sentence summary.".to_string());
         modes.insert("bullets".to_string(), "Return max 5 action‑oriented bullets.".to_string());
-        modes.insert("polite".to_string(), "Rewrite in a friendly yet professional tone.".to_string());
         modes.insert("direct".to_string(), "Rewrite, removing filler, ≤120 chars.".to_string());
         modes.insert("hebrew".to_string(), "Translate to Hebrew, keep formatting.".to_string());
+        modes.insert("spanish".to_string(), "Translate to Spanish, keep formatting.".to_string());
         
         PromptsConfig {
             default_mode: "tldr".to_string(),
